@@ -1,28 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package com.mycompany.sistemamatriculaciongrupo6;
 
+import java.util.ArrayList;
 import java.util.List;
 
-/**
- *
- * @author Mini Wernaso
- */
-public class Dueno {
+public class Dueno extends Persona {
     private List<Vehiculo> vehiculos;
-    String cedulaDueno;
-    Dueno dueno;
-    public Dueno getDueno(String cedula) {
-        return dueno;
+
+    public Dueno() {
+        this.vehiculos = new ArrayList<>();
     }
-     public void addVehiculo(Vehiculo vehiculo) {
+
+    public Dueno(String nombre, String cedula, String direccion, String telefono) {
+        super(nombre, cedula, direccion, telefono);
+        this.vehiculos = new ArrayList<>();
+    }
+
+    public void addVehiculo(Vehiculo vehiculo) {
         vehiculos.add(vehiculo);
     }
 
-    public void setCedulaDueno(String cedulaDueno) {
-        this.cedulaDueno = cedulaDueno;
+    public List<Vehiculo> getVehiculos() {
+        return vehiculos;
     }
-    
 }

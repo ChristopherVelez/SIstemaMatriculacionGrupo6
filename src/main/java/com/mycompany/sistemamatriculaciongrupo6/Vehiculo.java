@@ -70,7 +70,16 @@ public class Vehiculo {
     }
 
   
-   
+   public void mostrarDatos() {
+        System.out.println("Placa: " + placa);
+        System.out.println("Marca: " + marca);
+        System.out.println("Modelo: " + modelo);
+        System.out.println("Tipo: " + tipo);
+        System.out.println("Año: " + year);
+        System.out.println("Dueño: " + dueno.nombre);
+        
+       
+    }
         
             
         
